@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Deploy to Tomcat'){
         steps {
-        sh 'cp -r /root/.jenkins/workspace/vasaviproj/target/* /opt/apache-tomcat-8.5.29/webapps/'
+        sh 'cp -r /root/.jenkins/workspace/vasaviproj/target/* /opt/apache-tomcat-8.0.29/webapps/'
         }
         }
 
