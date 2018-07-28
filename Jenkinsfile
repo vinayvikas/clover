@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Deploy to Tomcat'){
         steps {
-        sh 'cp -r /root/.jenkins/workspace/mavendecleration/target/* /opt/apache-tomcat-8.5.32/webapps/'
+        sh 'cp -r /root/.jenkins/workspace/mavendeclerative/target/* /opt/apache-tomcat-8.5.32/webapps/'
         }
         }
 
