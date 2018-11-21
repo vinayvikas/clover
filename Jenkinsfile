@@ -31,7 +31,7 @@ pipeline
 {
         steps
  {
-        sh 'cp -r /root/.jenkins/workspace/pipelineproj/target/* /opt/apache-tomcat-8.5.3/webapps/'
+        sh 'cp -r /root/.jenkins/workspace/projpipeline/target/* /opt/apache-tomcat-8.5.31/webapps/'
         }
         }
 
