@@ -4,7 +4,7 @@ pipeline
 
     stages 
 {
-       stage ('Build') {
+       stage ('clone sources') {
         steps {
         git url: 'https://github.com/RavitejaAdepudi/javawar.git'
         }
@@ -15,7 +15,7 @@ pipeline
             steps
  {
                
-                    sh 'mvn clean install'
+                    sh 'mvn -f pom.xml clean install'
                 
             }
         }
@@ -26,7 +26,7 @@ pipeline
             steps
  {
                 
-                    sh 'mvn test'
+                    sh 'mvn -f pom.xml test'
                 }
             
         }
