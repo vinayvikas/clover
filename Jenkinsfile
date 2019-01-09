@@ -4,15 +4,19 @@ pipeline
 
     stages 
 {
+       stage ('Build') {
+        steps {
+        git url: 'https://github.com/RavitejaAdepudi/javawar.git'
+        }
+       }
         stage ('Compile Stage') 
 {
 
             steps
  {
-                withMaven(maven : 'maven_3_5_0')
- {
-                    sh 'mvn clean install'
-                }
+               
+                    sh 'mvn -f clean install'
+                
             }
         }
 
@@ -21,17 +25,16 @@ pipeline
 
             steps
  {
-                withMaven(maven : 'maven_3_5_0') 
-{
-                    sh 'mvn test'
+                
+                    sh 'mvn -f  test'
                 }
-            }
+            
         }
         stage('Deploy to Tomcat')
 {
         steps
  {
-        sh 'cp -r /root/.jenkins/workspace/pipe/target/* /opt/apache-tomcat-8.5.3/webapps/'
+        sh 'cp -r /root/.jenkins/workspace/target/* /opt/apache-tomcat-8.5.3/webapps/'
         }
         }
 
