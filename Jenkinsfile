@@ -15,7 +15,7 @@ pipeline
             steps
  {
                
-                    sh 'mvn -f clean install'
+                    sh 'mvn clean install'
                 
             }
         }
@@ -26,7 +26,7 @@ pipeline
             steps
  {
                 
-                    sh 'mvn -f  test'
+                    sh 'mvn test'
                 }
             
         }
