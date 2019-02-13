@@ -4,11 +4,7 @@ pipeline
 
     stages 
 {
-       stage ('clone sources') {
-        steps {
-        git url: 'https://github.com/RavitejaAdepudi/javawar.git'
-        }
-       }
+      
         stage ('Compile Stage') 
 {
 
