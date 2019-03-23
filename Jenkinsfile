@@ -22,7 +22,7 @@ pipeline
             steps
  {
                 
-                    sh 'mvn -f pom.xml test'
+                    sh 'mvn -f pom.xml tesbvgbgt'
                 }
             
         }
