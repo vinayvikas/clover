@@ -30,7 +30,7 @@ pipeline
 {
         steps
  {
-        sh 'cp -R /root/.jenkins/workspace/Decpipeline/target* /opt/apache-tomcat-8.5.3/webapps/'
+        sh 'cp -R /root/.jenkins/workspace/akash_new/target* /opt/apache-tomcat-8.5.3/webapps/'
         }
         }
 
