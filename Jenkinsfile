@@ -30,7 +30,7 @@ pipeline
 {
         steps
  {
-        sh 'cp -R /root/.jenkins/workspace/pipe5/target* /opt/apache-tomcat-8.5.3/webapps/'
+        sh 'cp -R /root/.jenkins/workspace/pipe5/declarative/target* /opt/apache-tomcat-8.5.3/webapps/'
         }
         }
 
