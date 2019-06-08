@@ -16,7 +16,7 @@ pipeline
             }
         }
 
-        stage ('Testing Stage')
+        stage ('Testing Stage is also done')
  {
 
             steps
