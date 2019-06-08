@@ -5,7 +5,7 @@ pipeline
     stages 
 {
       
-        stage ('Compile Stage') 
+        stage ('Compile Stage was done') 
 {
 
             steps
