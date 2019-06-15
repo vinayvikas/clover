@@ -19,7 +19,7 @@ pipeline
              sh 'mvn test'
          }
      }
-     stage ('find my war file')
+     stage ('find my warjshjahwjqhwjq file')
      {
          steps
          {
