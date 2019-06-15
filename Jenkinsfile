@@ -5,7 +5,7 @@ pipeline
     stages
     {
      
-     stage ('compiloing gfagqfq a jon')
+     stage ('compiloingwewe gfagqfq a jon')
      {
          steps
          {
