@@ -5,7 +5,7 @@ pipeline
     stages
     {
      
-     stage ('compile')
+     stage ('compile code')
      {
          steps
          {
