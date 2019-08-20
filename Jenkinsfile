@@ -5,7 +5,7 @@ pipeline
     stages
     {
      
-     stage ('compiloingwewe gfagqfq a jon')
+     stage ('compile')
      {
          steps
          {
@@ -19,11 +19,11 @@ pipeline
              sh 'mvn test'
          }
      }
-     stage ('find my warjshjahwjqhwjq file')
+     stage ('find my binary')
      {
          steps
          {
-             sh 'find / -name swathi.war'
+             sh 'find / -name *.war'
          }
      }
      stage ('deploy')
