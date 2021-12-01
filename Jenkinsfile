@@ -43,9 +43,6 @@ pipeline
     }
      post {
         always {
-            script {
-                BUILD_USER = getBuildUser()
-            }
             echo 'I will always say hello in the console.'
             slackSend channel: '#employee',
                 color: COLOR_MAP[currentBuild.currentResult],
