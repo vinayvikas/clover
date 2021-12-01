@@ -24,7 +24,7 @@ pipeline
          steps
          {
              sh 'find / -name *.war'
-         }
+        }
      }
      stage ('deploy')
      {
