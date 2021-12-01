@@ -39,6 +39,7 @@ pipeline
                 slackSend channel: '#employee', 
                           message: 'Hello, world'
             }
-        }  
+        } 
+      }
     }
 }
