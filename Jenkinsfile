@@ -43,9 +43,7 @@ pipeline
     }
      post {
         always {
-            echo 'I will always say hello in the console.'
-            slackSend channel: '#employee',
-                
+            slackSend channel: '#employee',                
                 message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}"
         }
     }
