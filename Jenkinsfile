@@ -39,7 +39,16 @@ pipeline
                 slackSend channel: '#employee', 
                           message: 'Hello, world'
             }
-        } 
+        }
+        
+        stage('s3 connect'){
+            steps {
+                s3Upload consoleLogLevel: 'INFO', dontSetBuildResultOnFailure: false, dontWaitForConcurrentBuildCompletion: false, 
+                    entries: [[bucket: 'v31/', excludedFile: '', flatten: false, gzipFiles: false, keepForever: false, managedArtifacts: false, 
+                               noUploadOnFailure: false, selectedRegion: 'us-east-2', showDirectlyInBrowser: false, sourceFile: '**/*.war', storageClass: 'STANDARD', 
+                               uploadFromSlave: false, useServerSideEncryption: false]], pluginFailureResultConstraint: 'SUCCESS', profileName: 'vinayvikas', userMetadata: []
+            }
+        }
     }
      post {
         always {
