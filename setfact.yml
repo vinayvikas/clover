@@ -3,7 +3,7 @@
   tasks:
     - name: set facts
       set_fact:
-        user: RavitejaAdepudi
+        user: vinayvikas
         project: javawar
     - name: pushing to github
       commands: 'git push https://github.com/"{{ user }}"/"{{ project }}".git'
