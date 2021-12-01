@@ -44,7 +44,7 @@ pipeline
      post {
         always {
             slackSend channel: '#employee',                
-                message: "*${currentBuild.currentResult}\n* Job ${env.JOB_NAME}\n build ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}"
+                message: "Result : ${currentBuild.currentResult}\n Job : ${env.JOB_NAME}\n buildno : ${env.BUILD_NUMBER} \n More info at: ${env.BUILD_URL}"
         }
     }
 }
