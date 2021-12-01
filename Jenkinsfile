@@ -33,13 +33,12 @@ pipeline
              sh 'cp -R /root/.jenkins/workspace/vikas/target/* /opt/apache-tomcat-8.5.3/webapps'
          }
      }
-      stages {
+  
         stage('Slack it'){
             steps {
                 slackSend channel: '#employee', 
                           message: 'Hello, world'
             }
         } 
-      }
     }
 }
